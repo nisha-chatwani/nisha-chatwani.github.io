@@ -24,23 +24,42 @@
     font-family:'Oswald', sans-serif;
     text-align:center;
   }
-  
-  .menu {
-    float:left;
+
+  .navbar-nav {
+    display:inline-block;
+    padding-left: 0px;
+    color: white;
+  }
+
+  #color {
+      color: white;
   }
   
-  .menu ul {
+  .container ul {
     list-style:none;
-    margin: 8px;
+    margin: 4px;
     padding: 5px;
   }
-  
-  .menu li {
-    display: inline-block;
-    padding: 0 12px;
+
+  .navbar-nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
   
-  .menu a {
+  .navbar-nav li {
+    display: inline-block;
+    padding: 0 5px;
+  }
+  
+  #myNavBar {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
@@ -49,24 +68,24 @@
     color:white;
     padding-left: 4px;
     padding-right: 4px;
-    padding-bottom: 2px;
-    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-top: 0px;
   }
   
-  .menu a:hover {
+  #myNavbar a:hover {
     color:#f03f35;
   }
   
-  #mainNav {
+  .navbar {
     position: fixed;
     top: 0;
     width: 100%;
     padding-bottom:0px;
     padding-top:0px;
-    background-color: rgba(0, 0, 0, 0.493)
+    background-color: rgba(0, 0, 0, 0.493);
   }
   
-  .menu.scrolled {
+  #menu.scrolled {
     background-color: rgba(0, 0, 0, 0.493) !important;
     transition: background-color 200ms linear;
   }
@@ -399,4 +418,5 @@
   #lab_social_icon_footer #social-em:hover {
     color: #f39c12;
   }
+
   
