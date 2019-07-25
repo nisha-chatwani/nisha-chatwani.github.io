@@ -140,6 +140,7 @@
     max-width: 99%;
     padding-bottom: 50px;
     white-space: nowrap;
+    display: inline-block;
   }
 
   .single + .prosum-intro {
@@ -202,7 +203,7 @@
 
     .single + .boeing-intro + .ch-intro +.gals-intro +.gwc-intro +.prosum-intro +.soccer-intro +.piano-intro {
         display: block;
-        width: 65%;
+        width:100%;
         margin: 0 auto;
     }
 
@@ -249,7 +250,6 @@
   
    .img-fluid7 {
      float: left;
-     padding-right: 0px;
      padding-left: 75px;
      padding-bottom: 25px;
      padding-right: 100px;
