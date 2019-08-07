@@ -18,7 +18,7 @@
     transform: translate(-50%, -50%);
   }
   
-  .header {
+  #header {
     color: white;
     font-size: 79px;
     font-family:'Oswald', sans-serif;
