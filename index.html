@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name=”viewport” content="width=device-width, initial-scale=1″>
-  <meta name= "description" content="A brief overview of my activities and interests.">
+  <meta name= " description" content="A brief overview of my activities and interests.">
   <meta name="author" content="Nisha Chatwani">
   <meta property="og:image" content="img/flame2.jpeg" />
   <meta property="og:type" content="website" />
@@ -32,43 +32,62 @@
 
   <!-- Custom styles for this template -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href="main.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/modal.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/superslides.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  </link>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Custom scripts for this template -->
-  <script src="scripts/menubar.js"></script>
+  <script src="js/menubar.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
-
 <body>
-<div class="animated fadeIn delay-1s">
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle pull-left" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li><a id="color" href="#about">About</a></li>
-          <li><a id="color" href="#portfolio">Portfolio</a></li>
-          <li><a id="color" href="https://docs.google.com/document/d/1SHTBBGKxXMyhn7Am63pNHhjHMPeFh9jn5TFm8FEhXUQ/edit?usp=sharing">Resume</a></li>
-          <li><a id="color" href="mailto:nisha.chatwani@usc.edu">Contact</a></li>
-        </ul>
+  <div class="fixed-top">
+    <div class="nav">
+      <ul class="navbar">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" target="_blank"
+            href="https://docs.google.com/document/d/1SHTBBGKxXMyhn7Am63pNHhjHMPeFh9jn5TFm8FEhXUQ/edit?usp=sharing">Resume</a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="mailto:nisha.chatwani@usc.edu">Contact</a></li>
+      </ul>
+    </div>
+  </div> 
+
+  <div id="slides">
+    <div class="overlay"></div>
+    <div class="slides-container">
+      <img src="img/bridge2.jpeg" alt="">
+      <img src="img/flame2.jpg" alt="">
+      <img src="img/slide2.jpg" alt="" width=50 height=50>
+    </div>
+    <nav class="slides-navigation">
+      <a href="#" class="next"></a>
+      <a href="#" class="prev"></a>
+    </nav>
+    <div class="titleMessage">
+      <div class="heading">
+        <p class="main">Nisha Chatwani</p>
+        <p class="sub typed"></p>
       </div>
     </div>
-  </nav>
-</div>
-  <header>
-    <div class="header-image"></div>
-    <div class="header-text">
-      <h1 class="animated slideInRight delay-1s" id="header">NISHA CHATWANI</h1>
-    </div>
-  </header>
+  </div>
+
+  <script src="js/jquery.superslides.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 
   <!--About Section-->
   <section id="about">
@@ -77,7 +96,7 @@
     </center>
     <div class="bio">
       <center>
-        <p>My name is Nisha Chatwani, and I'm a freshman studying computer engineering at the University
+        <p>My name is Nisha Chatwani, and I'm a freshman studying Computer Science and Applied Math at the University
           <br>of Southern California. I have been passionate about coding since middle school, and I want to create
           <br>innovative technology that will help people in all parts of the world. I see programming as a universal
           <br>language that brings people together, and I strive to utilize computers and applications to give them
@@ -96,124 +115,187 @@
       <h4 class="text-muted" id="portfolio-caption">Past and present experiences</h4>
     </center>
 
-    <div class="row">
-      <div class="single">
-        <img class="img-fluid1" src="img/prosum.jpg" alt="Prosum" height=auto width="530">
-      </div>
-      <div class="prosum-intro">
-        <h2 class="portfolio-title">Prosum</h2>
-        <h4 class="position">Technical Intern | June 2019 - August 2019</h4>
-        <ul class="prosum-content">
-          <li>Created multiple scripts using Python, Javascript, and Selenium to generate more traffic towards Prosum's
-            website
-          <li>Configured scripts on a Virtual Machine (Google Compute Engine)</li>
-          <li>Helped redefine Prosum's site structure in Microsoft Sharepoint</li>
-          <li>Researched X-Ray and Boolean search techniques to source for hard-to-find candidates and technical talent
-          </li>
-        </ul>
-      </div>
-    </div>
+    <div class="frame-square">
+      <div class="row2">
+        <div class="column2">
+          <img class="img-fluid" id="img-prosum" src="img/prosum_logo.png" alt="Prosum">
+          <h2 class="exp">Prosum</h2>
+          <h3 class="role">Technical Intern</h3>
+          <!-- The Modal -->
+          <div id="modal-prosum" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">Prosum</h2>
+                  <h3 class="header-caption">Technical Intern | June 2019 - August 2019</h3>
+                </div>
+                <span class="close" id="close1">X</span>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid2" id="img-prosum" src="img/prosum_logo.png" alt="Prosum">
+                <div class="exp-content">
+                  <p>Created multiple Python scripts to generate more traffic towards Prosum's website</p>
+                  <p>Configured the scripts on a virtual machine using Google Compute Engine)</p>
+                  <p>Researched X-Ray and Boolean search techniques to source for hard-to-find candidates and technical
+                    talent</p>
+                  <p>Redefined Prosum's site structure in Microsoft Sharepoint</p>
+                </div>
+                <button class="close-button" id="close-button1">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="single">
-        <img class="img-fluid2" src="img/Boeing.jpg" alt="Boeing Graduation" height="300" width=auto>
-      </div>
-      <div class="boeing-intro">
-        <h2 class="portfolio-title">Boeing</h2>
-        <h4 class="position">Software Engineering Intern | June 2018 - August 2018</h4>
-        <ul class="boeing-content">
-          <li>Created a GUI using Java and Swing allowing Boeing's developers to send commands to their satellites</li>
-          <li>Connected to Boeing’s servers to populate dropdowns and tables with satellite information</li>
-          <li>Contributed to documentation explaining how to navigate the GUI using GitLab</li>
-          <li>Awarded finalist of pitch competition for a team proposal on zero-gravity recycling</li>
-        </ul>
-      </div>
-    </div>
+        <div class="column2">
+          <img class="img-fluid" id="img-boeing" src="img/boeing_logo.jpg" alt="Boeing">
+          <h2 class="exp">Boeing</h2>
+          <h3 class="role">Software Engineering Intern</h3>
+          <!-- The Modal -->
+          <div id="modal-boeing" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">Boeing</h2>
+                  <h3 class="header-caption">Software Engineering Intern | June 2018 - August 2018</h3>
+                </div>
+                <span class="close" id="close2">X</span>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid2" id="img-boeing" src="img/Boeing.jpg" alt="Boeing">
+                <div class="exp-content">
+                  <p>Created a GUI using Java and Swing allowing Boeing's developers to send commands to their
+                    satellites</p>
+                  <p>Connected to Boeing’s servers to populate dropdowns and tables with satellite information</p>
+                  <p>Contributed to documentation explaining how to navigate the GUI using GitLab</p>
+                  <p>Awarded finalist of pitch competition for a team proposal on zero-gravity recycling</p>
+                </div>
+                <button class="close-button" id="close-button2">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="single">
-        <img class="img-fluid3" src="img/GWC.jpg" alt="Girls Who Code Logo" height=auto width="530">
+        <div class="column2">
+          <img class="img-fluid" id="img-lab" src="img/interaction.png" alt="Interaction Lab">
+          <h2 class="exp">Interaction Lab</h2>
+          <h3 class="role">Research Assistant</h3>
+          <!-- The Modal -->
+          <div id="modal-lab" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">Interaction Lab</h2>
+                  <h3 class="header-caption">Research Assistant | October 2019 - Present</h3>
+                </div>
+                <span class="close" id="close3">X</span>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid2" id="img-lab" src="img/interaction.png" alt="Interaction Lab">
+                <div class="exp-content">
+                  <p>Researching how aspects of embodiment impact users’ social perceptions of a robot</p>
+                  <p>Working towards helping researchers create robots to elicit particular social perceptions</p>
+                  <p>Using Amazon Mechanical Turk to conduct studies determining which design metaphors fit certain robots</p>
+                </div>
+                <button class="close-button" id="close-button3">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="gwc-intro">
-        <h2 class="portfolio-title">Girls Who Code @ AT&T</h2>
-        <h4 class="position">High School Intern | June 2017 - August 2017</h4>
-        <ul class="gwc-content">
-          <li>Learned HTML, CSS, JavaScript, C, & Python</li>
-          <li>Created a website (<a class="link" href="https://github.com/nisha-chatwani/CostForCrime">Cost of
-              Crime</a>) using HTML/CSS and Bootstrap</li>
-          <li>Paired with female mentor at AT&T</li>
-        </ul>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="single">
-        <img class="img-fluid4" src="img/GALS.jpeg" alt="Assembled Prosthetic Hands" height="300" width=auto>
-      </div>
-      <div class="gals-intro">
-        <h2 class="portfolio-title">GALS (Girls Advancing in Leadership and STEM)</h2>
-        <h4 class="position">President | August 2015 - June 2019</h4>
-        <ul class="gals-content">
-          <li>Organized workshops to teach GALS members how to build prosthetic hands with 3D-printed pieces</li>
-          <li>Taugh female students different programming languages in order to introduce them to computer science</li>
-          <li>Started the "Girls Who Wear" project to build wearable technology using Adafruit microcontrollers,
-            <br>conductive thread, LED lights, and Arduino</li>
-        </ul>
-      </div>
-    </div>
+      <div class="row1">
+        <div class="column1">
+          <img class="img-fluid" id="img-cais" src="img/cais_logo.jpg" alt="CAIS++">
+          <h2 class="exp">CAIS++</h2>
+          <h3 class="role">Deepfake Detection</h3>
+          <!-- The Modal -->
+          <div id="modal-cais" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">CAIS++</h2>
+                  <h3 class="header-caption">Deepfake Detection | September 2019 - Present</h3>
+                </div>
+                <span class="close" id="close4">X</span>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid2" id="img-cais" src="img/cais_total.png" alt="CAIS++">
+                <div class="exp-content">
+                  <p>Promoting the development of AI applications for social good</p>
+                  <p>Built an
+                    <a target="_blank" href="https://docs.google.com/presentation/d/1-4DlpQ6Rnd45gBRZsVHA9K4w-_fF-ncZCLyklSlP5kk/edit?usp=sharing">inception model</a> using transfer learning to recognize American Sign Language letters given images</p>
+                  <p>Participating in the 
+                    <a target="_blank" href="https://deepfakedetectionchallenge.ai/">Deepfake Detection Challenge </a>in order to develop models that can help detect deepfake videos</p>
+                  <p>and manipulated media using video processing, face detection, CNNs, and RNNs</p>
+                </div>
+                <button class="close-button" id="close-button4">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="single">
-        <img class="img-fluid5" src="img/piano.jpeg" alt="Nisha with one of her students" height="300" width=auto>
-      </div>
-      <div class="piano-intro">
-        <h2 class="portfolio-title">Crescendo to Success</h2>
-        <a class="link" href="www.crescendotosuccess.com">www.crescendotosuccess.com</a>
-        <h4 class="position">Founder and CEO | January 2016 - August 2019</h4>
-        <ul class="piano-content">
-          <li>Received a grant from an investor panel through the Young Entrepreneurs Academy</li>
-          <li>Teach piano lessons to children in my community</li>
-          <li>Launched and grew business to 8 students through marketing efforts</li>
-          <li>Completed Level 10 of the Certificate of Merit Program with honors, making me a qualified piano teacher
-          </li>
-        </ul>
-      </div>
-    </div>
+        <div class="column1">
+          <img class="img-fluid" id="img-scope" src="img/scope_logo.png" alt="Scope">
+          <h2 class="exp">Scope</h2>
+          <h3 class="role">MemeMatch</h3>
+          <!-- The Modal -->
+          <div id="modal-scope" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">Scope</h2>
+                  <h3 class="header-caption">MemeMatch | October 2019 - Present</h3>
+                </div>
+                <span class="close" id="close5">X</span>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid2" id="img-scope" src="img/scope_win.jpeg" alt="Scope">
+                <div class="exp-content">
+                  <p>Scope is USC's computer science club where the top students come together to build, create, and learn.</p>
+                  <p>Creating a web app MemeMatch to match users based on the memes they swipe right on</p>
+                  <p>Earned first place in Facebook's Puzzle Hunt amongst several teams</p>
+                  <p>Completed React JS curriculum</p>
+                </div>
+                <button class="close-button" id="close-button5">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="row">
-      <div class="single">
-        <img class="img-fluid6" src="img/ch.jpeg" alt="Club Harmony Members" height="300" width=auto>
+        <div class="column1">
+          <img class="img-fluid" id="img-soccer" src="img/usc.jpg" alt="Soccer">
+          <h2 class="exp">USC Club Soccer Team</h2>
+          <h3 class="role">Center Midfielder</h3>
+          <!-- The Modal -->
+          <div id="modal-soccer" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">USC Club Soccer Team</h2>
+                  <h3 class="header-caption">Center Midfielder | September 2019 - Present</h3>
+                </div>
+                <span class="close" id="close6">X</span>
+              </div>
+              <div class="modal-body">
+                <img class="img-fluid2" id="img-soccer" src="img/soccer_team.jpeg" alt="Soccer">
+                <div class="exp-content">
+                  <p>Won first place at the UC Santa Barbara tournament</p>
+                  <p>Participated in the Champions Division of the Nationals Tournament in Austin, Texas</p>
+                </div>
+                <button class="close-button" id="close-button6">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="ch-intro">
-        <h2 class="portfolio-title">Club Harmony</h2>
-        <a class="link" href="https://clubharmony.global/">www.clubharmony.global</a>
-        <h4 class="position">Founder | October 2016 - June 2019</h4>
-        <ul class="ch-content">
-          <li>Promoted diversity & social inclusivity by inviting speakers of diverse background on a monthly basis</li>
-          <li>Granted $1.5K from the Manhattan Beach Education Foundation to support club activities for three
-            consecutive years</li>
-          <li>Successfully expanded the club to two other schools in Los Angeles after giving a presentation at a
-            Universal Harmony event at Universal Studios</li>
-        </ul>
-      </div>
     </div>
-
-    <div class="row1">
-      <div class="single"></div>
-      <img class="img-fluid7" src="img/Soccer.jpeg" alt="Nisha playing soccer" height="300" width=auto>
-    </div>
-    <div class="soccer-intro">
-      <h2 class="portfolio-title">Los Angeles Galaxy Club Soccer</h2>
-      <h4 class="position">Team Captain and Player | August 2015 - June 2019</h4>
-      <ul class="soccer-content">
-        <li>Chosen as Team Captain for three years by my teammates</li>
-        <li>Had the responsibility of leading warmups before games and practices and voicing the team's opinion to our
-          coach</li>
-        <li>Selected to participate in weekly LA Galaxy Leadership Class</li>
-        <li>Finalist in Southern California League Playoffs</li>
-      </ul>
-    </div>
-    </div>
+    <script src="js/modal.js"></script>
   </section>
 </body>
 
@@ -224,13 +306,13 @@
       <span class="copyright">© Nisha Chatwani 2019</span>
       <div class="container">
         <div class="text-center center-block">
-          <a href="https://www.linkedin.com/in/nisha-chatwani/"><i id="social-li"
-              class="fa fa-linkedin-square fa-3x social"></i></a>
-          <a href="https://github.com/nisha-chatwani/nisha-chatwani.github.io"><i id="social-gh"
-              class="fa fa-github-square fa-3x social"></i></a>
-          <a href="https://www.facebook.com/people/Nisha-Chatwani/100009733364353"><i id="social-fb"
-              class="fa fa-facebook-square fa-3x social"></i></a>
-          <a href="mailto:nisha.chatwani@usc.edu"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/nisha-chatwani/"><i id="social-li"
+              class="fa fa-linkedin-square fa-4x social"></i></a>
+          <a target="_blank" href="https://github.com/nisha-chatwani/nisha-chatwani.github.io"><i id="social-gh"
+              class="fa fa-github-square fa-4x social"></i></a>
+          <a target="_blank" href="https://www.facebook.com/people/Nisha-Chatwani/100009733364353"><i id="social-fb"
+              class="fa fa-facebook-square fa-4x social"></i></a>
+          <a target="_blank" href="mailto:nisha.chatwani@usc.edu"><i id="social-em" class="fa fa-envelope-square fa-4x social"></i></a>
         </div>
       </div>
     </section>
