@@ -5,8 +5,8 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name=”viewport” content="width=device-width, initial-scale=1″>
-  <meta name= " description" content="A brief overview of my activities and interests.">
+  <meta name=”viewport” content="width=device-width, initial-scale=1">
+  <meta name= "description" content="A brief overview of my activities and interests.">
   <meta name="author" content="Nisha Chatwani">
   <meta property="og:image" content="img/flame2.jpeg" />
   <meta property="og:type" content="website" />
@@ -51,9 +51,10 @@
     <div class="nav">
       <ul class="navbar">
         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#work">Internships</a></li>
         <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a class="nav-link" target="_blank"
-            href="https://docs.google.com/document/d/1olI9YGvT03tquC0nyRq2P-9wTSCKzOVFfRlzlXtfE2k/edit?usp=sharing">Resume</a>
+            href="https://docs.google.com/document/d/1Qi_-mLYXEJAe3j35a2aeVuMlGWuDrrOfsFN3R73adM0/edit?usp=sharing">Resume</a>
         </li>
         <li class="nav-item"><a class="nav-link" href="mailto:nisha.chatwani@usc.edu">Contact</a></li>
       </ul>
@@ -100,27 +101,49 @@
           <br>of Southern California. I have been passionate about coding since middle school, and I want to create
           <br>innovative technology that will help people in all parts of the world. I see programming as a universal
           <br>language that brings people together, and I strive to utilize computers and applications to give them
-          <br> a purpose that impacts society positively.
+          <br> a purpose that impacts society positively. I am seeking sofware engineering internships for Summer 2021.
         </p>
       </center>
     </div>
   </section>
 
-  <!--Portfolio Section-->
-  <section id="portfolio">
+  <!--Work Experience Section-->
+  <section id="work">
     <center>
-      <h2 class="section-heading">Portfolio</h2>
+      <h2 class="section-heading">Work Experience</h2>
     </center>
-    <center>
-      <h4 class="text-muted" id="portfolio-caption">Past and present experiences</h4>
-    </center>
-
     <div class="frame-square">
       <div class="row2">
         <div class="column2">
+          <img class="img-fluid" id="img-ray" src="img/ray.png" alt="Raytheon">
+          <h2 class="exp">Raytheon Technologies</h2>
+          <h3 class="role">Software Engineering Intern</h3>
+          <!-- The Modal -->
+          <div id="modal-raytheon" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">Raytheon Technologies</h2>
+                  <h3 class="header-caption">Software Engineering Intern | May 2020 - Aug 2020</h3>
+                </div>
+                <span class="close" id="close1">X</span>
+              </div>
+              <div class="modal-body">
+                <img id="img-ray2" src="img/ray2.png" alt="Raytheon">
+                <div class="exp-content">
+                  <p>Working in the cybersecurity division</p>
+                </div>
+                <button class="close-button" id="close-button1">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column2">
           <img class="img-fluid" id="img-prosum" src="img/prosum_logo.png" alt="Prosum">
           <h2 class="exp">Prosum</h2>
-          <h3 class="role">Technical Intern</h3>
+          <h3 class="role">Software Engineering Intern</h3>
           <!-- The Modal -->
           <div id="modal-prosum" class="modal">
             <!-- Modal content -->
@@ -130,18 +153,18 @@
                   <h2 class="header-text">Prosum</h2>
                   <h3 class="header-caption">Technical Intern | June 2019 - August 2019</h3>
                 </div>
-                <span class="close" id="close1">X</span>
+                <span class="close" id="close2">X</span>
               </div>
               <div class="modal-body">
                 <img class="img-fluid2" id="img-prosum" src="img/prosum_logo.png" alt="Prosum">
                 <div class="exp-content">
                   <p>Created multiple Python scripts to generate more traffic towards Prosum's website</p>
-                  <p>Configured the scripts on a virtual machine using Google Compute Engine)</p>
+                  <p>Generated 75% more traffic to Prosum's website by configuring the scripts on a virtual machine using Google Compute Engine</p>
                   <p>Researched X-Ray and Boolean search techniques to source for hard-to-find candidates and technical
                     talent</p>
                   <p>Redefined Prosum's site structure in Microsoft Sharepoint</p>
                 </div>
-                <button class="close-button" id="close-button1">X CLOSE</button>
+                <button class="close-button" id="close-button2">X CLOSE</button>
               </div>
             </div>
           </div>
@@ -160,23 +183,36 @@
                   <h2 class="header-text">Boeing</h2>
                   <h3 class="header-caption">Software Engineering Intern | June 2018 - August 2018</h3>
                 </div>
-                <span class="close" id="close2">X</span>
+                <span class="close" id="close3">X</span>
               </div>
               <div class="modal-body">
-                <img class="img-fluid2" id="img-boeing" src="img/Boeing.jpg" alt="Boeing">
+                <img id="img-boeing" src="img/Boeing.jpg" alt="Boeing">
                 <div class="exp-content">
-                  <p>Created a GUI using Java and Swing allowing Boeing's developers to send commands to their
-                    satellites</p>
-                  <p>Connected to Boeing’s servers to populate dropdowns and tables with satellite information</p>
-                  <p>Contributed to documentation explaining how to navigate the GUI using GitLab</p>
-                  <p>Awarded finalist of pitch competition for a team proposal on zero-gravity recycling</p>
+                  <p>Developed a GUI using Java and Swing for Boeing programmers to send commands to certain satellites</p>
+                  <p>Populated dropdowns and tables with satellite information in Boeing servers</p>
+                  <p>Contributed to technical documentation explaining how to navigate the GUI</p>
+                  <p>Finalist of pitch competition for our proposal on zero-gravity recycling</p>
                 </div>
-                <button class="close-button" id="close-button2">X CLOSE</button>
+                <button class="close-button" id="close-button3">X CLOSE</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    <script src="js/modal.js"></script>
+  </section>
 
+  <!--Portfolio Section-->
+  <section id="portfolio">
+    <center>
+      <h2 class="section-heading">Portfolio</h2>
+    </center>
+    <center>
+      <h4 class="text-muted" id="portfolio-caption">Past and present experiences</h4>
+    </center>
+
+    <div class="frame-square">
+      <div class="row2">
         <div class="column2">
           <img class="img-fluid" id="img-lab" src="img/interaction.png" alt="Interaction Lab">
           <h2 class="exp">Interaction Lab</h2>
@@ -190,47 +226,14 @@
                   <h2 class="header-text">Interaction Lab</h2>
                   <h3 class="header-caption">Research Assistant | October 2019 - Present</h3>
                 </div>
-                <span class="close" id="close3">X</span>
-              </div>
-              <div class="modal-body">
-                <img class="img-fluid2" id="img-lab" src="img/interaction.png" alt="Interaction Lab">
-                <div class="exp-content">
-                  <p>Researching how aspects of embodiment impact users’ social perceptions of a robot</p>
-                  <p>Working towards helping researchers create robots to elicit particular social perceptions</p>
-                  <p>Using Amazon Mechanical Turk to conduct studies determining which design metaphors fit certain robots</p>
-                </div>
-                <button class="close-button" id="close-button3">X CLOSE</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row1">
-        <div class="column1">
-          <img class="img-fluid" id="img-cais" src="img/cais_logo.jpg" alt="CAIS++">
-          <h2 class="exp">CAIS++</h2>
-          <h3 class="role">Deepfake Detection</h3>
-          <!-- The Modal -->
-          <div id="modal-cais" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">CAIS++</h2>
-                  <h3 class="header-caption">Deepfake Detection | September 2019 - Present</h3>
-                </div>
                 <span class="close" id="close4">X</span>
               </div>
               <div class="modal-body">
-                <img class="img-fluid2" id="img-cais" src="img/cais_total.png" alt="CAIS++">
+                <img id="img-lab" src="img/interaction.png" alt="Interaction Lab">
                 <div class="exp-content">
-                  <p>Promoting the development of AI applications for social good</p>
-                  <p>Built an
-                    <a target="_blank" href="https://docs.google.com/presentation/d/1-4DlpQ6Rnd45gBRZsVHA9K4w-_fF-ncZCLyklSlP5kk/edit?usp=sharing">inception model</a> using transfer learning to recognize American Sign Language letters given images</p>
-                  <p>Participating in the 
-                    <a target="_blank" href="https://deepfakedetectionchallenge.ai/">Deepfake Detection Challenge </a>in order to develop models that can help detect deepfake videos</p>
-                  <p>and manipulated media using video processing, face detection, CNNs, and RNNs</p>
+                  <p>Researched how to utilize socially-assistive robots to teach children with autism about empathy</p>
+                  <p>Created an 
+                    <a target="blank_" href = "nisha-chat.epizy.com" >interactive website </a> using to display robot stories, record student responses using PHP, and assess perspective-taking abilities via a tablet over a 4-week period</p>
                 </div>
                 <button class="close-button" id="close-button4">X CLOSE</button>
               </div>
@@ -238,28 +241,28 @@
           </div>
         </div>
 
-        <div class="column1">
-          <img class="img-fluid" id="img-scope" src="img/scope_logo.png" alt="Scope">
-          <h2 class="exp">Scope</h2>
-          <h3 class="role">MemeMatch</h3>
+        <div class="column2">
+          <img class="img-fluid" id="img-cais" src="img/cais_logo.jpg" alt="CAIS++">
+          <h2 class="exp">CAIS++</h2>
+          <h3 class="role">Curriculum Lead</h3>
           <!-- The Modal -->
-          <div id="modal-scope" class="modal">
+          <div id="modal-cais" class="modal">
             <!-- Modal content -->
             <div class="modal-content">
               <div class="modal-header">
                 <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">Scope</h2>
-                  <h3 class="header-caption">MemeMatch | October 2019 - Present</h3>
+                  <h2 class="header-text">CAIS++</h2>
+                  <h3 class="header-caption">Curriculum Lead | September 2019 - Present</h3>
                 </div>
                 <span class="close" id="close5">X</span>
               </div>
               <div class="modal-body">
-                <img class="img-fluid2" id="img-scope" src="img/scope_win.jpeg" alt="Scope">
+                <img id="img-cais" src="img/cais_total.png" alt="CAIS++">
                 <div class="exp-content">
-                  <p>Scope is USC's computer science club where the top students come together to build, create, and learn.</p>
-                  <p>Creating a web app MemeMatch to match users based on the memes they swipe right on</p>
-                  <p>Earned first place in Facebook's Puzzle Hunt amongst several teams</p>
-                  <p>Completed React JS curriculum</p>
+                  <p>Leading a group of 5 students and teaching them basic machine learning concepts<p>
+                  <p>Used image classification to build an
+                    <a target="_blank" href="https://docs.google.com/presentation/d/1-4DlpQ6Rnd45gBRZsVHA9K4w-_fF-ncZCLyklSlP5kk/edit?usp=sharing">inception model</a> that recognizes American Sign Language letters</p>
+                    <p>Promoting the development of AI applications for social good</p>
                 </div>
                 <button class="close-button" id="close-button5">X CLOSE</button>
               </div>
@@ -267,7 +270,118 @@
           </div>
         </div>
 
-        <div class="column1">
+      <div class="column2">
+        <img class="img-fluid" id="img-wic" src="img/wic.png" alt="Women in Computing">
+        <h2 class="exp">USC Women in Computing</h2>
+        <h3 class="role">Director of Academics</h3>
+        <!-- The Modal -->
+        <div id="modal-wic" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="text-center center-block" id="header-block">
+                <h2 class="header-text">USC Women in Computing</h2>
+                <h3 class="header-caption">Director of Academics | Jan 2020 - Present</h3>
+              </div>
+              <span class="close" id="close6">X</span>
+            </div>
+            <div class="modal-body">
+              <img id="img-wic2" src="img/wic2.png" alt="Women in Computing">
+              <div class="exp-content">
+                <p>Host professional development and technical workshops to introduce different aspects of computer programming</p>
+                <p>Led workshops on Personal Website Building, Neural Networks, Computer Graphics, and Google Cloud Platform</p>
+              </div>
+              <button class="close-button" id="close-button6">X CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row2">
+        <div class="column2">
+          <img class="img-fluid" id="img-hh" src="img/hh.png" alt="LA Helping Hands">
+          <h2 class="exp">Los Angeles Helping Hands</h2>
+          <h3 class="role">Co-Founder and CTO</h3>
+          <!-- The Modal -->
+          <div id="modal-hh" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">LA Helping Hands</h2>
+                  <h3 class="header-caption">Co-Founder and CTO | March 2020 - Present</h3>
+                </div>
+                <span class="close" id="close7">X</span>
+              </div>
+              <div class="modal-body">
+                <img id="img-hh" src="img/hh2.png" alt="LA Helping Hands">
+                <div class="exp-content">
+                  <p>Created <a target="blank_" href="lahelpinghands.com">LA Helping Hands</a> during the COVID-19 epidemic to match higher-risk individuals with volunteers to help pick up groceries and provide virtual company </p>
+                  <p> Wrote a matching algorithm using Python and Google Maps API in order to automate matching</p>
+                  <p>Featured in local media such as KTLA News, The Beach Reporter, and The BeachLife Festival</p>
+                </div>
+                <button class="close-button" id="close-button7">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <div class="column2">
+          <img class="img-fluid" id="img-df" src="img/df.png" alt="Deepfake Detection">
+          <h2 class="exp">Deepfake Detection Project</h2>
+          <!-- The Modal -->
+          <div id="modal-df" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">
+                <div class="text-center center-block" id="header-block">
+                  <h2 class="header-text">Deepfake Detection Project</h2>
+                  <h3 class="header-caption">Jan 2020 - Aug 2020</h3>
+                </div>
+                <span class="close" id="close8">X</span>
+              </div>
+              <div class="modal-body">
+                <img id="img-df2" src="img/df2.png" alt="Deepfake Detection">
+                <div class="exp-content">
+                  <p>Built a <a target="_blank" href="https://deepfakedetectionchallenge.ai/">classification model</a> specifically focusing on eye blinking to detect deepfake videos in order to reduce the spread of fake news</p>
+                  <p>Earned an accuracy of 82% and utilized tools such as face detection, video processing, CNNs, and RNNs</p>
+                </div>
+                <button class="close-button" id="close-button8">X CLOSE</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="column2">
+        <img class="img-fluid" id="img-swe" src="img/swe.png" alt="Society of Women Engineers">
+        <h2 class="exp">Society of Women Engineers</h2>
+        <h3 class="role">Officer of Community Outreach</h3>
+        <!-- The Modal -->
+        <div id="modal-swe" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="text-center center-block" id="header-block">
+                <h2 class="header-text">Society of Women Engineers</h2>
+                <h3 class="header-caption">Officer of Community Outreach | May 2020 - Present</h3>
+              </div>
+              <span class="close" id="close9">X</span>
+            </div>
+            <div class="modal-body">
+              <img class="img-fluid2" id="img-swe" src="img/swe.png" alt="Society of Women Engineers">
+              <div class="exp-content">
+                <p>Creating partnerships with local schools to inspire young women to pursue careers in engineering</p>
+              </div>
+              <button class="close-button" id="close-button9">X CLOSE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        <div class="column2">
           <img class="img-fluid" id="img-soccer" src="img/usc.jpg" alt="Soccer">
           <h2 class="exp">USC Club Soccer Team</h2>
           <h3 class="role">Center Midfielder</h3>
@@ -280,15 +394,15 @@
                   <h2 class="header-text">USC Club Soccer Team</h2>
                   <h3 class="header-caption">Center Midfielder | September 2019 - Present</h3>
                 </div>
-                <span class="close" id="close6">X</span>
+                <span class="close" id="close10">X</span>
               </div>
               <div class="modal-body">
-                <img class="img-fluid2" id="img-soccer" src="img/soccer_team.jpeg" alt="Soccer">
+                <img id="img-soccer" src="img/soccer_team.jpeg" alt="Soccer">
                 <div class="exp-content">
                   <p>Won first place at the UC Santa Barbara tournament</p>
                   <p>Participated in the Champions Division of the Nationals Tournament in Austin, Texas</p>
                 </div>
-                <button class="close-button" id="close-button6">X CLOSE</button>
+                <button class="close-button" id="close-button10">X CLOSE</button>
               </div>
             </div>
           </div>
@@ -297,6 +411,8 @@
     </div>
     <script src="js/modal.js"></script>
   </section>
+
+
 </body>
 
 <!--Footer-->
