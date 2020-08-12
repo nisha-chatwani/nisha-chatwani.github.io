@@ -57,9 +57,9 @@ var span9 = document.getElementById("close9");
 var span10 = document.getElementById("close10");
 
 // When the user clicks the button, open the modal 
-// btn1.onclick = function() {
-//   modal1.style.display = "block";
-// }
+btn1.onclick = function() {
+  modal1.style.display = "block";
+}
 btn1a.onclick = function() {
   modal1.style.display = "block";
 }
