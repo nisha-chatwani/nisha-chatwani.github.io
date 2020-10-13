@@ -1,6 +1,10 @@
 #slides {
   position: relative;
 }
+
+.slides-container img {
+  background-size: contain;
+}
 #slides .slides-container {
   display: none;
 }
@@ -9,9 +13,9 @@
   position: relative;
   top: 0;
   left: 0;
-  overflow-y: auto;
+  /* overflow-y: 0; */
   -webkit-overflow-scrolling: touch;
-  height: 100%;
+  /* height: 100%; */
 }
 #slides .scrollable:after {
   content: "";
