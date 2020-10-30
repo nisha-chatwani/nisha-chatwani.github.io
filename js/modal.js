@@ -8,7 +8,8 @@ var modal6 = document.getElementById('modal-wic');
 var modal7 = document.getElementById('modal-hh');
 var modal8 = document.getElementById('modal-df');
 var modal9 = document.getElementById('modal-swe');
-var modal10 = document.getElementById('modal-soccer');
+var modal10 = document.getElementById('modal-vep');
+var modal11 = document.getElementById('modal-soccer');
 
 // Get the button that opens the modal
 var btn1 = document.getElementById("img-ray");
@@ -26,11 +27,13 @@ var btn6a = document.getElementsByClassName("exp")[5];
 var btn7 = document.getElementById('img-hh');
 var btn7a = document.getElementsByClassName("exp")[6];
 var btn8 = document.getElementById('img-df');
-var btn8a = document.getElementsByClassName("exp")[6];
+var btn8a = document.getElementsByClassName("exp")[7];
 var btn9 = document.getElementById('img-swe');
-var btn9a = document.getElementsByClassName("exp")[6];
-var btn10 = document.getElementById('img-soccer');
-var btn10a = document.getElementsByClassName("exp")[6];
+var btn9a = document.getElementsByClassName("exp")[8];
+var btn10 = document.getElementById('img-vep');
+var btn10a = document.getElementsByClassName("exp")[9];
+var btn11 = document.getElementById('img-soccer');
+var btn11a = document.getElementsByClassName("exp")[10];
 
 //Get the button that closes the modal
 var closebtn1 = document.getElementById("close-button1");
@@ -43,6 +46,7 @@ var closebtn7 = document.getElementById("close-button7");
 var closebtn8 = document.getElementById("close-button8");
 var closebtn9 = document.getElementById("close-button9");
 var closebtn10 = document.getElementById("close-button10");
+var closebtn11 = document.getElementById("close-button11");
 
 // Get the <span> element that closes the modal
 var span1 = document.getElementById("close1");
@@ -55,6 +59,7 @@ var span7 = document.getElementById("close7");
 var span8 = document.getElementById("close8");
 var span9 = document.getElementById("close9");
 var span10 = document.getElementById("close10");
+var span11 = document.getElementById("close11");
 
 // When the user clicks the button, open the modal 
 btn1.onclick = function() {
@@ -117,8 +122,12 @@ btn10.onclick = function() {
 btn10a.onclick = function() {
   modal10.style.display = "block";
 }
-
-
+btn11.onclick = function() {
+  modal11.style.display = "block";
+}
+btn11a.onclick = function() {
+  modal11.style.display = "block";
+}
 
 // When the user clicks on <span> (x), close the modal
 span1.onclick = function() {
@@ -151,6 +160,9 @@ span9.onclick = function() {
 span10.onclick = function() {
   modal10.style.display = "none";
 }
+span11.onclick = function() {
+  modal11.style.display = "none";
+}
 
 //Wnen the user clicks on the close button, close the modal
 closebtn1.onclick = function() {
@@ -182,6 +194,9 @@ closebtn9.onclick = function() {
 }
 closebtn10.onclick = function() {
   modal10.style.display = "none";
+}
+closebtn11.onclick = function() {
+  modal11.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
