@@ -1,5 +1,3 @@
-
-
 .slides-navigation .prev,
 .slides-navigation .next
 {
@@ -11,14 +9,13 @@ padding-top: 0px;
 margin: 0 auto 0;
 }
 
-.exp-content a {
+/* .exp-content a {
     text-decoration: none !important;
-    color: rgba(240,63,53,1) !important;
 }
 
 .exp-content a:hover {
     color: #b7e3e4 !important;
-}
+} */
 
 .slides-navigation a.prev
 {
