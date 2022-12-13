@@ -15,8 +15,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/main.css" rel="stylesheet">
-  <link href="css/modal.css" rel="stylesheet">
-  <link href="css/pure.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/superslides.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -25,7 +25,12 @@
   <!-- Custom scripts for this template -->
   <script src="js/menubar.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="js/jquery.superslides.min.js"></script>
+  <script src="js/typed.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -62,13 +67,6 @@
     </div>
   </div>
 
-  <script src="js/jquery.superslides.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-
   <!--About Section-->
   <section id="about">
     <center>
@@ -76,11 +74,11 @@
     </center>
     <div class="bio container">
       <center>
-        <p>My name is Nisha Chatwani, and I'm a sophomore studying Computer Science and Applied Math at the University
+        <p>My name is Nisha Chatwani, and I'm a senior studying Computer Science at the University
           of Southern California. I have been passionate about coding since middle school, and I want to create
           innovative technology that will help people in all parts of the world. I see programming as a universal
           language that brings people together, and I strive to utilize computers and applications to give them
-          a purpose that impacts society positively. I will be a SWE intern at Microsoft this summer!
+          a purpose that impacts society positively.
         </p>
       </center>
     </div>
@@ -90,90 +88,153 @@
   <div id="work">
     <center>
       <h2 class="section-heading">Work Experience</h2>
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
+
+      <div class="row">
+        <div class="col">
+          <img class="img-fluid" id="img-peloton" src="img/peloton.png" alt="Peloton">
+          <h2 class="exp">Peloton Interactive</h2>
+          <h3 class="role">Incoming Software Engineering Intern</h3>
+        </div>
+
+        <div class="col">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#microsoftModal">
+          <img class="img-fluid" id="img-msft" src="img/msft.png" alt="Microsoft">
+        </button>
+          <h2 class="exp">Microsoft</h2>
+          <h3 class="role">Software Engineering Intern</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="microsoftModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Microsoft</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Sofware Engineer Intern | May 2022 – Aug 2022</h5>
+                  <ul>
+                    <li>Built a desktop application using C# and XAML to improve the configuration experience of Windows devices</li>
+                  </ul>
+                  <br>
+                  <h6>Sofware Engineer Intern | May 2021 – Aug 2021</h6>
+                  <ul>
+                    <li>Built a desktop application using C# and XAML to improve the configuration experience of Windows devices</li>
+                  </ul>
+                  <img style="margin-left: 25%;" class="w-50" src="img/IMG_9218.jpg">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#ekoModal">
+          <img class="img-fluid" id="img-eko" src="img/eko.jpeg" alt="Eko">
+        </button>
+          <h2 class="exp">Eko Financial Services</h2>
+          <h3 class="role">Software Engineering Intern</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="ekoModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Eko</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Sofware Engineer Intern | Sept 2020 – Dec 2020</h5>
+                  <ul>
+                    <li>Created <a href="https://eko.in/">Eko's website</a> with <a href="https://github.com/nisha-chat/eko-website">Jamstack</a>, making financial services available to migrant workers in India</li>
+                    <li>Ran data analysis on the tech support email corpus to cluster common problems customers faced with Eko's API</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+      <div class="row">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#rayModal">
           <img class="img-fluid" id="img-ray" src="img/ray.png" alt="Raytheon">
+          </button>
           <h2 class="exp">Raytheon Technologies</h2>
           <h3 class="role">Software Engineering Intern</h3>
-          <!-- The Modal -->
-          <div id="modal-raytheon" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">Raytheon Technologies</h2>
-                  <h3 class="header-caption">Software Engineering Intern | May 2020 - July 2020</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="rayModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Raytheon</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close1">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-ray2" class="img-modal" src="img/ray.png" alt="Raytheon">
+                <div class="modal-body">
+                  <h5>Sofware Engineer Intern | May 2020 - July 2020</h5>
+                  <ul>
+                    <li><p>Developed software to manage secure file transfers and analyze satellite databases using Python and SQL</p></li>
+                  </ul>
                 </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Developed software to manage secure file transfers and analyze satellite databases using Python and SQL</p></li>
-                </ul>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
-              <button class="close-button" id="close-button1">X CLOSE</button>
             </div>
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-prosum" src="img/prosum_logo.png" alt="Prosum">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#prosumModal">
+          <img class="img-fluid" id="img-prosum" src="img/prosum_logo.png" alt="Prosum"></button>
           <h2 class="exp">Prosum</h2>
           <h3 class="role">Software Engineering Intern</h3>
-          <!-- The Modal -->
-          <div id="modal-prosum" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">Prosum</h2>
-                  <h3 class="header-caption">Software Engineering Intern | June 2019 - August 2019</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="prosumModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Prosum</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close2">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img class="img-modal" id="img-prosum" src="img/prosum_logo.png" alt="Prosum">
+                <div class="modal-body">
+                  <h5>Sofware Engineer Intern | June 2019 - August 2019</h5>
+                  <ul>
+                    <li>Created multiple Python scripts to generate more traffic towards Prosum's website</li>
+                    <li>Generated 75% more traffic to Prosum's website by configuring the scripts on a virtual machine using Google Compute Engine</li>
+                    <li>Researched X-Ray and Boolean search techniques to source for hard-to-find candidates and technical talent</li>
+                    <li>Redefined Prosum's site structure in Microsoft Sharepoint</li>
+                  </ul>
                 </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Created multiple Python scripts to generate more traffic towards Prosum's website</p></li>
-                  <li><p>Generated 75% more traffic to Prosum's website by configuring the scripts on a virtual machine using Google Compute Engine</p></li>
-                  <li><p>Researched X-Ray and Boolean search techniques to source for hard-to-find candidates and technical talent</p></li>
-                  <li><p>Redefined Prosum's site structure in Microsoft Sharepoint</p></li>
-                </ul>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
-              <button class="close-button" id="close-button2">X CLOSE</button>
             </div>
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-boeing" src="img/Boeing.jpg" alt="Boeing">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#boeingModal">
+          <img class="img-fluid" id="img-boeing" src="img/Boeing.jpg" alt="Boeing"></button>
           <h2 class="exp">Boeing</h2>
           <h3 class="role">Software Engineering Intern</h3>
-          <!-- The Modal -->
-          <div id="modal-boeing" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">Boeing</h2>
-                  <h3 class="header-caption">Software Engineering Intern | June 2018 - August 2018</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="boeingModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Boeing</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close3">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-boeing" src="img/Boeing.jpg" alt="Boeing">
-                </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
+                <div class="modal-body">
+                  <h5>Sofware Engineer Intern | June 2018 - August 2018</h5>
                   <ul>
                     <li><p>Developed a GUI using Java and Swing for Boeing programmers to send commands to certain satellites</p></li>
                     <li><p>Populated dropdowns and tables with satellite information in Boeing servers</p></li>
@@ -181,279 +242,325 @@
                     <li><p>Finalist of pitch competition for our proposal on zero-gravity recycling</p></li>
                   </ul>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
-              <button class="close-button" id="close-button3">X CLOSE</button>
             </div>
           </div>
         </div>
       </div>
       </center>
-    <script src="js/modal.js"></script>
   </div>
 
   <!--Portfolio Section-->
   <div id="portfolio">
     <center>
       <h2 class="section-heading">Portfolio</h2>
-      <h4 class="text-muted" id="portfolio-caption">Past and present experiences</h4>
+      <h4 id="portfolio-caption">Past and present experiences</h4>
 
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-lab" src="img/interaction.png" alt="Interaction Lab">
+      <div class="row">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#labModal">
+          <img class="img-fluid" id="img-lab" src="img/interaction.png" alt="Interaction Lab"></button>
           <h2 class="exp">Interaction Lab</h2>
           <h3 class="role">Research Assistant</h3>
-          <!-- The Modal -->
-          <div id="modal-lab" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">Interaction Lab</h2>
-                  <h3 class="header-caption">Research Assistant | Sept 2019 - Present</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="labModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Interaction Lab</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close4">X</span>
+                <div class="modal-body">
+                  <h5>Student Researcher | Sept 2019 - June 2022</h5>
+                  <ul>
+                    <li>Researched ways in which socially-assistive robots, embodied learning, and AR can teach children coding</li>
+                    <li>Created a <a href="https://posetocode.web.app/tutorial.html">web-based embodied learning programming activity</a> in which students pose to create code blocks 
+                      that control an on-screen robot and <a href="https://www.thinkmind.org/index.php?view=article&articleid=achi_2022_3_120_20060">published our work</a> in the International Conf. on Advances in CHI</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-lab" src="img/interaction.png" alt="Interaction Lab">
-                </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Researched how to utilize socially-assistive robots to teach children with autism about empathy</p></li>
-                  <li><p>Created an <a target="blank_" href = "http://nisha-chat.epizy.com/enterID.php" >interactive website </a> using to display robot stories, record student responses using PHP, and assess perspective-taking abilities via a tablet over a 4-week period</p></li>
-                </div>
-              </div>
-              <button class="close-button" id="close-button4">X CLOSE</button>
             </div>
           </div>
         </div>
-
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-cais" src="img/cais_logo.jpg" alt="CAIS++">
-          <h2 class="exp">CAIS++</h2>
-          <h3 class="role">Curriculum Lead</h3>
-          <!-- The Modal -->
-          <div id="modal-cais" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">CAIS++</h2>
-                  <h3 class="header-caption">Curriculum Lead | Aug 2020 - Present</h3>
-                </div>
-                <span class="close" id="close5">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-cais" src="img/cais_total.png" alt="CAIS++">
-                </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Leading a group of 5 students and teaching them basic machine learning concepts<p>
-                  <li><p>Used image classification to build an <a target="_blank" href="https://docs.google.com/presentation/d/1-4DlpQ6Rnd45gBRZsVHA9K4w-_fF-ncZCLyklSlP5kk/edit?usp=sharing">inception model</a> that recognizes American Sign Language letters</p></li>
-                  <li><p>Promoting the development of AI applications for social good</p></li>
-                </ul>
-                </div>
-              </div>
-              <button class="close-button" id="close-button5">X CLOSE</button>
-            </div>
-          </div>
-        </div>
-
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-wic" src="img/wic.png" alt="Women in Computing">
+    
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#wicModal">
+          <img class="img-fluid" id="img-wic" src="img/wic.png" alt="Women in Computing"></button>
           <h2 class="exp">USC Women in Computing</h2>
-          <h3 class="role">Director of Academics</h3>
-          <!-- The Modal -->
-          <div id="modal-wic" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">USC Women in Computing</h2>
-                  <h3 class="header-caption">Director of Academics | Jan 2020 - Present</h3>
+          <h3 class="role">President</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="wicModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">USC Women in Computing</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close6">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-wic2" src="img/wic2.png" alt="Women in Computing">
+                <div class="modal-body">
+                  <h5>President | Jan 2020 - May 2022</h5>
+                  <ul>
+                    <li><p>Host professional development and technical workshops to introduce different aspects of computer programming</p></li>
+                    <li><p>Led workshops on Personal Website Building, Neural Networks, Computer Graphics, and Google Cloud Platform</p></li>
+                  </ul>
                 </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Host professional development and technical workshops to introduce different aspects of computer programming</p></li>
-                  <li><p>Led workshops on Personal Website Building, Neural Networks, Computer Graphics, and Google Cloud Platform</p></li>
-                <ul>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
-              <button class="close-button" id="close-button6">X CLOSE</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mlpModal">
+          <img class="img-fluid" id="img-mlp" src="img/mlp_logo.jpeg" alt="Marc Lumer Productions"></button>
+          <h2 class="exp">Marc Lumer Productions</h2>
+          <h3 class="role">Web Developer</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="mlpModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Marc Lumer Productions</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Website Developer | Nov 2021 - May 2022</h5>
+                  <ul>
+                    <li>Created <a href="https://www.marclumerproductions.com/works">Marc Lumer Production's website</a> by injecting custom code into Squarespace</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#ddModal">
+          <img class="img-fluid" id="img-cais" src="img/cais_logo.jpg" alt="CAIS++"></button>
+          <h2 class="exp">Low-Cost Dementia Detection</h2>
+          <h3 class="role">Project Lead</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="ddModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Low-Cost Dementia Detection</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Project Lead | Jan 2021 - Dec 2021</h5>
+                  <ul>
+                    <li>Developed an automated dementia detection system using psycholinguistic and acoustic speech features</li>
+                    <li>Awarded the <a href="https://docs.google.com/presentation/d/1Z8zvHOTheBCi8Pjwv_xgJzZhDH2nFwnfcyqfyjf6XPE/edit?usp=sharing">Interdisciplinary Prize</a> at the USC Undergraduate Research Symposium</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="pure-g">
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-hh" src="img/hh.png" alt="LA Helping Hands">
+      <div class="row">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#lahhModal">
+          <img class="img-fluid" id="img-hh" src="img/hh2.png" alt="LA Helping Hands"></button>
           <h2 class="exp">Los Angeles Helping Hands</h2>
           <h3 class="role">Co-Founder and CTO</h3>
-          <!-- The Modal -->
-          <div id="modal-hh" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">LA Helping Hands</h2>
-                  <h3 class="header-caption">Co-Founder and CTO | March 2020 - Present</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="lahhModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Los Angeles Helping Hands</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close7">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-hh" src="img/hh2.png" alt="LA Helping Hands">
+                <div class="modal-body">
+                  <h5>Co-Founder and CTO | March 2020  – March 2021</h5>
+                  <ul>
+                    <li><p>Created <a target="blank_" href="https://www.lahelpinghands.com/">LA Helping Hands</a> during the COVID-19 epidemic to match higher-risk individuals with volunteers to help pick up groceries and provide virtual company </p></li>
+                    <li><p> Wrote a <a href="https://github.com/nisha-chat/Matching-Algorithm">matching algorithm</a> using Python and Google Maps API in order to automate matching</p></li>
+                    <li><p>Featured in local media such as <a href="https://ktla.com/5-live/these-college-students-founded-an-organization-to-help-high-risk-people-during-the-covid-19-pandemic/">KTLA News</a>, <a href="https://www.dailybreeze.com/2020/04/04/manhattan-beach-sisters-form-la-helping-hands-to-assist-seniors-during-coronavirus-crisis/">The Daily Breeze</a>, and The BeachLife Festival</p></li>                  </ul>
                 </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Created <a target="blank_" href="https://www.lahelpinghands.com/">LA Helping Hands</a> during the COVID-19 epidemic to match higher-risk individuals with volunteers to help pick up groceries and provide virtual company </p></li>
-                  <li><p> Wrote a matching algorithm using Python and Google Maps API in order to automate matching</p></li>
-                  <li><p>Featured in local media such as KTLA News, The Beach Reporter, and The BeachLife Festival</p></li>
-                </ul>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
-              <button class="close-button" id="close-button7">X CLOSE</button>
             </div>
           </div>
         </div>
 
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-          <img class="img-fluid" id="img-df" src="img/df.png" alt="Deepfake Detection">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#deepfakeModal">
+          <img class="img-fluid" id="img-df" src="img/df.png" alt="Deepfake Detection"></button>
           <h2 class="exp">Deepfake Detection Project</h2>
           <h3 class="role">Team Member</h3>
-          <!-- The Modal -->
-          <div id="modal-df" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-              <div class="modal-header">
-                <div class="text-center center-block" id="header-block">
-                  <h2 class="header-text">Deepfake Detection Project</h2>
-                  <h3 class="header-caption">Jan 2020 - Aug 2020</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="deepfakeModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Deepfake Detection Project</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <span class="close" id="close8">X</span>
-              </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-df2" src="img/df2.png" alt="Deepfake Detection">
+                <div class="modal-body">
+                  <h5>Team Member | Jan 2020 – Aug 2020</h5>
+                  <ul>
+                    <li><p>Built a <a target="_blank" href="https://github.com/nisha-chat/deepfake-detection">classification model</a> specifically focusing on eye blinking to detect deepfake videos in order to reduce the spread of fake news</p></li>
+                    <li><p>Earned an accuracy of 82% and utilized tools such as face detection, video processing, CNNs, and RNNs</p></li>
+                    <li><p>Compiled our methods and results in a <a target="_blank" href="https://arxiv.org/abs/2007.08517">research paper</a></p></li>
+                  </ul>
                 </div>
-                <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-                <ul>
-                  <li><p>Built a <a target="_blank" href="https://github.com/nisha-chat/deepfake-detection">classification model</a> specifically focusing on eye blinking to detect deepfake videos in order to reduce the spread of fake news</p></li>
-                  <li><p>Earned an accuracy of 82% and utilized tools such as face detection, video processing, CNNs, and RNNs</p></li>
-                  <li><p>Compiled our methods and results in a <a target="_blank" href="https://arxiv.org/abs/2007.08517">research paper</a></p></li>
-                </ul>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
               </div>
-              <button class="close-button" id="close-button8">X CLOSE</button>
             </div>
           </div>
         </div>
       
-        <div class="pure-u-1 pure-u-md-1-3 l-box">
-        <img class="img-fluid" id="img-swe" src="img/swe.png" alt="Society of Women Engineers">
-        <h2 class="exp">Society of Women Engineers</h2>
-        <h3 class="role">Community Outreach Officer</h3>
-        <!-- The Modal -->
-        <div id="modal-swe" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="text-center center-block" id="header-block">
-                <h2 class="header-text">Society of Women Engineers</h2>
-                <h3 class="header-caption">Officer of Community Outreach | May 2020 - Present</h3>
-              </div>
-              <span class="close" id="close9">X</span>
-            </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img class="img-modal" id="img-swe" src="img/swe.png" alt="Society of Women Engineers">
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#sweModal">
+          <img class="img-fluid" id="img-swe" src="img/swe.png" alt="Society of Women Engineers"></button>
+          <h2 class="exp">Society of Women Engineers</h2>
+          <h3 class="role">VP of Community Outreach</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="sweModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Society of Women Engineers</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-              <ul>
-                <li><p>Creating partnerships with local schools to inspire young women to pursue careers in engineering</p></li>
-              </ul>
+                <div class="modal-body">
+                  <h5>VP of Community Outreach |  May 2019 – May 2021</h5>
+                  <ul>
+                    <li><p>Creating partnerships with local schools to inspire young women to pursue careers in engineering</p></li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
-            <button class="close-button" id="close-button9">X CLOSE</button>
+          </div>
+        </div>
+
+        <div class="col">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#vepModal">
+          <img class="img-fluid" id="img-vep" src="img/vep.png" alt="Voter Empowerment Project"></button>
+          <h2 class="exp">Voter Empowerment Project</h2>
+          <h3 class="role">SEO Volunteer</h3>
+          <!-- Modal -->
+          <div class="modal fade" id="vepModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Voter Empowerment Project</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <h5>Volunteer |  July 2020  – Dec 2020</h5>
+                  <ul>
+                    <li><p>Used <a target="_blank" href="https://github.com/nisha-chat/VoterEmpowermentSEO">Search Engine Optimization</a> to enhance digital outreach of frontline voter groups in key states, bringing sites from page 17 to 1 in Google search</p></li>
+                    <li><p>Using my skills in engineering and empathy to make voting information more readily available and accessible</p></li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="pure-g">
-      <div class="pure-u-1 pure-u-md-1-3 l-box">
-      <img class="img-fluid" id="img-vep" src="img/vep.png" alt="Voter Empowerment Project">
-        <h2 class="exp">Voter Empowerment Project</h2>
-        <h3 class="role">SEO Volunteer</h3>
-        <!-- The Modal -->
-        <div id="modal-vep" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="text-center center-block" id="header-block">
-                <h2 class="header-text">Voter Empowerment Project</h2>
-                <h3 class="header-caption">SEO Volunteer | July 2020 - Present</h3>
-              </div>
-              <span class="close" id="close10">X</span>
-            </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-vep" src="img/vep-large.jpeg" alt="Voter Empowerment Project">
-                </div>
-              <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-              <ul>
-                <li><p>Used <a target="_blank" href="https://github.com/nisha-chat/VoterEmpowermentSEO">Search Engine Optimization</a> to enhance digital outreach of frontline voter groups in key states, bringing sites from page 17 to 1 in Google search</p></li>
-                <li><p>Using my skills in engineering and empathy to make voting information more readily available and accessible</p></li>
-              </ul>
-              </div>
-            </div>
-            <button class="close-button" id="close-button10">X CLOSE</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="pure-u-1 pure-u-md-1-3 l-box">
-      <img class="img-fluid" id="img-soccer" src="img/usc.jpg" alt="Soccer">
+  <div id="hobbies">
+    <center>
+    <h2 class="section-heading">Hobbies</h2>
+    <div class="row">
+      <div class="col"></div>
+      <div class="col">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#soccerModal">
+        <img class="img-fluid" id="img-soccer" src="img/usc.jpg" alt="Soccer"></button>
         <h2 class="exp">USC Club Soccer Team</h2>
-        <h3 class="role">Center Midfielder</h3>
-        <!-- The Modal -->
-        <div id="modal-soccer" class="modal">
-          <!-- Modal content -->
-          <div class="modal-content">
-            <div class="modal-header">
-              <div class="text-center center-block" id="header-block">
-                <h2 class="header-text">USC Club Soccer Team</h2>
-                <h3 class="header-caption">Center Midfielder | September 2019 - Present</h3>
+        <h3 class="role">Captain</h3>
+        <!-- Modal -->
+        <div class="modal fade" id="soccerModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">USC Club Soccer Team</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <span class="close" id="close11">X</span>
-            </div>
-              <div class="modal-body pure-g">
-                <div class="pure-u-1 pure-u-md-1-2 l-box">
-                  <img id="img-soccer" src="img/soccer_team.jpeg" alt="Soccer">
-                </div>
-              <div class="exp-content pure-u-1 pure-u-md-1-2 l-box">
-              <ul>
-                <li><p>Won first place at the UC Santa Barbara tournament</p></li>
-                <li><p>Participated in the Champions Division of the Nationals Tournament in Austin, Texas</p></li>
-              </ul>
+              <div class="modal-body">
+                <h5>Captain |  Aug 2019  – Present</h5>
+                <ul>
+                  <li><p>Undefeated Spring 2022 Season</p></li>
+                  <li><p>Won first place at the UC Santa Barbara tournament</p></li>
+                  <li><p>Participated in the Champions Division of the Nationals Tournament in Austin, Texas</p></li>
+                </ul>
+                <img style="margin-left:25%;" id="img-soccer" src="img/soccer_team.jpeg" alt="Soccer">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
-            <button class="close-button" id="close-button11">X CLOSE</button>
           </div>
         </div>
       </div>
+        
+
+      <div class="col">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#pbModal">
+        <img class="img-fluid" id="img-pb" src="img/pb.webp" alt="Pickleball"></button>
+        <h2 class="exp">Pickleball</h2>
+        <h3 class="role">Amateur Player</h3>
+        <!-- Modal -->
+        <div class="modal fade" id="pbModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Pickleball Player</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul>
+                  <li>Fall 2022: Won 1st place in Mixed's Doubles Thanksgiving Classic (Manhattan Beach, CA)</li>
+                  <li>Fall 2022: Won 1st place in Women's Doubles Thanksgiving Classic (Manhattan Beach, CA)</li>
+                  <li><p>Summer 2022: Competed in the Women's Doubles Aquafest Classic (Lake Stevens, Washington)</p></li>
+                </ul>
+                <div class="row">
+                  <div class="col"><img src="img/IMG_4127.jpg" alt="Pickleball"></div>
+                  <div class="col"><img src="img/IMG_5809.jpeg" alt="Pickleball"></div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col"></div>
     </div>
+    </center>
   </center>
   </div>
-  <script src="js/modal.js"></script>
 </body>
 
 <!--Footer-->
@@ -468,7 +575,7 @@
       <a target="_blank" href="mailto:nchatwan@usc.edu"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
     </div>
     <div class="pure-u-1 pure-u-md-1-2 pure-u-sm-1">
-      <span class="copyright">© Nisha Chatwani 2020</span>
+      <span class="copyright">© Nisha Chatwani 2023</span>
     </div>
   </div>
 </footer>
