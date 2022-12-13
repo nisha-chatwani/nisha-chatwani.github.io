@@ -15,10 +15,6 @@
   box-sizing: border-box;
 }
 
-.l-box {
-  padding: 0em;
-}
-
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -29,11 +25,8 @@ html {
 
 .img-fluid {
   width: 200px;
-  height: 200px;
-}
-
-.pure-g img {
-  padding-bottom: 15px;
+  height: auto;
+  /* padding-bottom: 5%; */
 }
 
 .slides img {
@@ -47,6 +40,10 @@ html {
 
 img{
   max-width: 100%;
+}
+
+#img-vep {
+  padding-bottom: 2%;
 }
 
 footer {
@@ -167,6 +164,13 @@ li.nav-item a.nav-link:hover {
   overflow:auto;
 }
 
+#hobbies {
+  background-color: var(--bg-color);
+  padding-top: 0px;
+  padding-bottom: 90px;
+  overflow:auto;
+}
+
 #portfolio {
   background-color: #557a95;
   padding-top: 0px;
@@ -174,6 +178,18 @@ li.nav-item a.nav-link:hover {
   overflow:auto;
 }
 
+ button {
+  border: none;
+ }
+
+ .modal-body {
+  text-align: left;
+ }
+
+ .carousel-item {
+  max-width: 70%;
+  max-height: 50%;
+ }
 #portfolio-caption {
   font-family: 'Oswald', sans-serif;
   font-style: italic;
@@ -249,6 +265,7 @@ li.nav-item a.nav-link:hover {
 }
 
 .exp {
+  padding-top: 5%;
   font-family: 'Oswald', sans-serif;
   font-size: 30px;
   color: var(--header-color);

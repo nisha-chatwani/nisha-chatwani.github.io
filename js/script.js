@@ -10,7 +10,7 @@ pagination: false
 });
 
 var typed = new Typed(".typed", {
-strings: ["I am a Software Developer", "I am a Trojan", "I am a leader", "I am curious"],
+strings: ["I am a Software Engineer", "I am a leader", "I am curious"],
 smartBackspace: true,
 typeSpeed: 70,
 backSpeed: 35,
